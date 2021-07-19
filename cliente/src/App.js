@@ -1,10 +1,13 @@
 import React, {Fragment, useState, useEffect} from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from './Components/Navbar';
-import OperationsList from './Components/OperationsList';
-import Form from './Components/Form';
+import Section from './Components/Section';
+//import OperationsList from './Components/OperationsList';
+//import Form from './Components/Form';
+
 
 function App() {
-
+/*
   const [operation, setOperation] = useState({
     concepto:'',
     monto:0,
@@ -26,11 +29,14 @@ function App() {
     getOperations();
     setListUpdated(false);
   }, [listUpdated])
-
+  */
   return (
     <Fragment>
-      <Navbar brand='App Gastos' />
-      <div className="container">
+      <Router>
+        <Navbar brand='Ingresar operación' />
+        <Section />
+    
+      {/*<div className="container">
         <div className="row">
           <div className="col-7">
             <h2 style={{textAlign:'center'}}>Operations List</h2>
@@ -38,10 +44,12 @@ function App() {
           </div>
           <div className="col-5">
             <h2 style={{textAlign:'center'}}>Operation Form</h2>
-            <Form operation={operation} setOperation={setOperation}/>
+            {/*<Form operation={operation} setOperation={setOperation}/>
+            <p>$20</p>
           </div>
         </div>
-      </div>
+      </div>*/}
+      </Router>
     </Fragment>
     
   );

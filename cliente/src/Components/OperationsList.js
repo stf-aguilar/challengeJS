@@ -1,5 +1,6 @@
 import React from 'react';
 
+/*
 const OperationsList = ({operation, setOperation, operations, setListUpdated}) => {
 	
 	const handleDelete = (id) => {
@@ -54,8 +55,8 @@ const OperationsList = ({operation, setOperation, operations, setListUpdated}) =
 					<th>Tipo</th>
 				</tr>
 			</thead>
-
-			<tbody>
+	{/*
+		<tbody>
 				{operations.map(operation => (
 					<tr key={operation.id}>
 						<td>{operation.id}</td>
@@ -73,11 +74,16 @@ const OperationsList = ({operation, setOperation, operations, setListUpdated}) =
 						</td>
 					</tr>
 
-				))}
+				))} 
 			</tbody>
 		</table>
 		);
 }
 
-
+*/
+const OperationsList = () => {
+		return(
+			<h4>Tabla</h4>
+			)
+}
 export default OperationsList;
